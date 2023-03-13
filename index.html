@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Rishal's Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="profile/profile.html">Home</a></li>
+          <li><a href="Projects/project.html">Projects</a></li>
+          <li><a href="Education/education.html">Education</a></li>
+          <li><a href="Skills/skills.html">Skills</a></li>
+          <li><button id="download-btn">Download Resume</button>
+          </li>
+        </ul>
+    </nav>
+    <div class="profile-card">
+        <img src="public/WhatsApp Image 2023-03-13 at 11.03.23 AM.jpeg" alt="Profile Picture">
+        <h2>MOHAMMED RISHAL P B</h2>
+        <p>Web Developer</p>
+        <p class="about_me">A self taught MERN Stack web developer based in Kochi. An innovative and task - driven professional successfully developed and deployed an E-commerce web application. Relevant skills include writing readable and maintainable codes, database, problem solving, debugging and more.</p>
+        <ul>
+          <li><i class="fas fa-envelope"></i>muhammedrishal025@gmail.com</li>
+          <li><i class="fas fa-phone"></i>9074642365</li>
+          <li><i class="fas fa-globe"></i>Kochi, Kerala, India</li>
+        </ul>
+      </div>
+</body>
+
+<script>
+const downloadBtn = document.getElementById('download-btn');
+
+
+downloadBtn.addEventListener('click', () => {
+
+  const resumeData = 'https://docs.google.com/document/d/1fP23mXoz7wpNj6nUxk8Y154VsnN9RO0kZyglk6wLQpA/edit?usp=sharing  ---> Use this link to get the resume';
+  const resumeBlob = new Blob([resumeData], { type: 'pdf' });
+
+  const resumeUrl = URL.createObjectURL(resumeBlob);
+
+  const downloadLink = document.createElement('a');
+  downloadLink.href = resumeUrl;
+  downloadLink.download = 'resume.txt';
+
+  downloadLink.click();
+});
+
+</script>
+</html>

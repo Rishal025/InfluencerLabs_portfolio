@@ -1,0 +1,100 @@
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .profile-card img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .profile-card p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .profile-card ul {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .profile-card li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card li i {
+    font-size: 20px;
+    color: #777;
+    margin-right: 10px;
+  }
+
+  nav {
+    background-color: #333;
+    height: 60px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  } 
+
+.about_me {
+    margin-left: 50px;
+    font-size: large;
+}
+
+button {
+    border: 2px solid #007bff; /* set the border width and color */
+    border-radius: 4px; /* add rounded corners */
+    padding: 10px 20px; /* add padding to the button */
+    font-size: 16px; /* set the font size */
+    color: #007bff; /* set the text color */
+    background-color: transparent; /* make the background transparent */
+    cursor: pointer; /* add a pointer cursor on hover */
+    transition: all 0.3s ease-in-out; /* add a transition effect */
+  }
+  
+  button:hover {
+    background-color: #007bff; /* change the background color on hover */
+    color: #fff; /* change the text color on hover */
+}
+
+
+  
